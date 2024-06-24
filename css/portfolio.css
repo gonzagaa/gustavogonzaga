@@ -1,0 +1,78 @@
+
+
+.smooth-scroll-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 200vh;
+    left: 0;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+
+}
+
+.smooth-scroll-wrapper .content {
+    width: 60%;
+    margin: 160px auto;
+}
+
+.smooth-scroll-wrapper .content section {
+    transition: transform 0.25s;
+    will-change: transform;
+}
+
+.smooth-scroll-wrapper .content h1 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #ffffff;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    position: relative;
+}
+
+.smooth-scroll-wrapper .content h1::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background-color: #fff;
+    left: 0;
+    top: -15px;
+}
+
+.smooth-scroll-wrapper .content p {
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.smooth-scroll-wrapper .content .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 0;
+    border: 1px solid #2e2e2e;
+}
+
+.smooth-scroll-wrapper .content section img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+    transition: all 500ms ease-in-out;
+
+    filter: brightness(.8) blur(0);
+}
+
+.smooth-scroll-wrapper .content section img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: brightness(.5) blur(3px);
+
+}
+
+.smooth-scroll-wrapper .content div {
+    margin: 0 0 90px 0;
+}
